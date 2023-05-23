@@ -31,16 +31,15 @@ const Navbar = () => {
     <nav className="bg-yellow-300 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center text-gray-800">
-          <FiHome className="h-6 w-6 mr-2" />
-          <span className="text-2xl font-bold">Home</span>
+          <FiHome className="h-6 w-6 mr-2 ml-2" />
         </Link>
 
         {/* Hamburger Menu */}
         {isMobile && (
-          <div className="block lg:hidden">
+          <div className="block lg:hidden mr-2">
             <button
               onClick={toggleMenu}
-              className="flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-yellow-600 hover:border-yellow-600"
+              className="flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 hover:text-yellow-600 hover:border-yellow-600 ml-24"
             >
               <svg
                 className="h-4 w-4"
@@ -69,56 +68,30 @@ const Navbar = () => {
         )}
 
         {/* Nav Links */}
-        {!isMobile && (
-          <div className="hidden lg:flex lg:items-center lg:w-auto">
-            <div className="text-sm lg:flex-grow">
-              <Link
-                to="/recipes"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600 mr-4"
-              >
-                Recipes
-              </Link>
-              <Link
-                to="/about"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600 mr-4"
-              >
-                About
-              </Link>
-              <Link
-                to="/contact"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="lg:hidden">
-            <div className="text-sm">
-              <Link
-                to="/recipes"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600 mr-4"
-              >
-                Recipes
-              </Link>
-              <Link
-                to="/about"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600 mr-4"
-              >
-                About
-              </Link>
-              <Link
-                to="/contact"
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-yellow-600"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        )}
+        <div
+          className={`${
+            isMobile ? (isOpen ? 'block' : 'hidden') : 'flex'
+          } items-center ml-0 mr-2 space-x-4`}
+        >
+          <Link
+            to="/recipes"
+            className="text-gray-800 hover:text-yellow-600"
+          >
+            Recipes
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-800 hover:text-yellow-600"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-800 hover:text-yellow-600"
+          >
+            Contact
+          </Link>
+        </div>
       </div>
     </nav>
   );
