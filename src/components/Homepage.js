@@ -1,17 +1,15 @@
-// Homepage.js
 import React from 'react';
+import Slideshow from './Slideshow';
 import Navbar from './Navbar';
 
 const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto p-4">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Kev's Kitchen!</h1>
-        <p className="text-lg">
-          Start exploring delicious recipes!
-        </p>
-        {/* Additional content for the homepage */}
+      <div className="bg-yellow-100 container mx-auto py-8" >
+        <h1 className="text-4xl font-bold text-center mb-6">Welcome to Kev's Kitchen!</h1>
+        <p className="text-xl text-center mb-8">Discover delicious recipes for every occasion!</p>
+        <Slideshow />
       </div>
     </div>
   );
