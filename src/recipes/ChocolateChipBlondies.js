@@ -1,11 +1,14 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import RecipePage from '../components/RecipePage';
 
-export const ChocolateChipBlondies = () => {
+const ChocolateChipBlondies = () => {
   return (
     <div>
-        <Navbar /> 
-        <div>Chocolate Chip Blondies</div>
+      <Navbar />
+      <RecipePage title="Chocolate Chip Blondies" />
     </div>
-  )
-}
+  );
+};
+
+export default ChocolateChipBlondies;

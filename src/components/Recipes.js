@@ -3,11 +3,11 @@ import Navbar from './Navbar';
 
 const Recipes = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [recipes, setRecipes] = useState([
+  const recipes = [
     'Chocolate Chip Blondies',
     'Banana Bread',
     'Salted Caramel Brownies',
-  ]);
+  ];
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);

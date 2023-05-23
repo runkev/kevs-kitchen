@@ -18,21 +18,21 @@ const Slideshow = () => {
       stopOnHover={false}
       className="max-w-md mx-auto border-black border-2 rounded-2xl overflow-hidden"
     >
-      <div>
-        <Link to="/ChocolateChipBlondies">
+      <Link to="/recipes/ChocolateChipBlondies">
+        <div>
           <img src={recipe1} alt="Recipe 1" className="w-full h-80 object-cover rounded-2xl" />
-        </Link>
-      </div>
-      <div>
-        <Link to="/recipe2">
+        </div>
+      </Link>
+      <Link to="/recipes/SaltedCaramelBrownies">
+        <div>
           <img src={recipe2} alt="Recipe 2" className="w-full h-80 object-cover rounded-2xl" />
-        </Link>
-      </div>
-      <div>
-        <Link to="/recipe3">
-          <img src={recipe3} alt="Recipe 3" className="w-full h-80 object-cover rounded-2xl" />
-        </Link>
-      </div>
+        </div>
+      </Link>
+      <Link to="/recipes/BananaBread">
+        <div>
+          <img src={recipe2} alt="Recipe 3" className="w-full h-80 object-cover rounded-2xl" />
+        </div>
+      </Link>
     </Carousel>
   );
 };
