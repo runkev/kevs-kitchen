@@ -19,7 +19,7 @@ const Slideshow = () => {
       className="max-w-md mx-auto border-black border-2 rounded-2xl overflow-hidden"
     >
       <div>
-        <Link to="/recipe1">
+        <Link to="/ChocolateChipBlondies">
           <img src={recipe1} alt="Recipe 1" className="w-full h-80 object-cover rounded-2xl" />
         </Link>
       </div>
