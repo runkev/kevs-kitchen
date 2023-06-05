@@ -30,7 +30,7 @@ const Slideshow = () => {
       </Link>
       <Link to="/recipes/BananaBread">
         <div>
-          <img src={recipe2} alt="Recipe 3" className="w-full h-80 object-cover rounded-2xl" />
+          <img src={recipe3} alt="Recipe 3" className="w-full h-80 object-cover rounded-2xl" />
         </div>
       </Link>
     </Carousel>

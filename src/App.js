@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/Recipes" element={<Recipes />} />
         <Route path="/About" element={<About />} />
-        <Route path="/chocolate-chip-blondies" element={<ChocolateChipBlondies />} />
+        <Route path="/recipes/chocolate-chip-blondies" element={<ChocolateChipBlondies />} />
         {/* Add other routes and components */}
       </Routes>
     </Router>

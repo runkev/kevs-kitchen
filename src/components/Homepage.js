@@ -8,7 +8,7 @@ const Homepage = () => {
       <Navbar />
       <div className="bg-yellow-100 container mx-auto py-8" >
         <h1 className="text-4xl font-bold text-center mb-6">Welcome to Kev's Kitchen!</h1>
-        <p className="text-xl text-center mb-8">Discover delicious recipes for every occasion!</p>
+        <p className="text-xl text-center mb-8">Simple, easy to use recipes without the mile-long life stories</p>
         <Slideshow />
       </div>
     </div>

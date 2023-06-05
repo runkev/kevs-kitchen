@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const Recipes = () => {
@@ -37,7 +38,7 @@ const Recipes = () => {
       <ul className='w-full'>
         {filteredRecipes.map((recipe, index) => (
           <li key={index} className="mb-2 border border-gray-300 rounded px-4 py-2 hover:bg-gray-100">
-            {recipe}
+            <Link to={`/recipe/${index + 1}`}>{recipe}</Link>
           </li>
         ))}
       </ul>
