@@ -21,27 +21,30 @@ const Recipes = () => {
 
   return (
     <div>
-      <Navbar /> 
-      <div className='container mx-auto px-4 max-w-6xl'> 
-      <h1 className="text-3xl font-bold mb-4">Recipes</h1>
+      <Navbar />
+      <div className="container mx-auto px-4 max-w-6xl">
+        <h1 className="text-3xl font-bold mb-4">Recipes</h1>
 
-      <div className="w-full mb-4">
-        <input
-          type="text"
-          placeholder="Search recipes"
-          value={searchQuery}
-          onChange={handleSearchChange}
-          className="w-full border border-gray-300 rounded px-4 py-2"
-        />
-      </div>
+        <div className="w-full mb-4">
+          <input
+            type="text"
+            placeholder="Search recipes"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="w-full border border-gray-300 rounded px-4 py-2"
+          />
+        </div>
 
-      <ul className='w-full'>
-        {filteredRecipes.map((recipe, index) => (
-          <li key={index} className="mb-2 border border-gray-300 rounded px-4 py-2 hover:bg-gray-100">
-            <Link to={`/recipe/${index + 1}`}>{recipe}</Link>
-          </li>
-        ))}
-      </ul>
+        <ul className="w-full">
+          {filteredRecipes.map((recipe, index) => (
+            <li
+              key={index}
+              className="mb-2 border border-gray-300 rounded px-4 py-2 hover:bg-gray-100"
+            >
+              <Link to={`/recipes/${index + 1}`}>{recipe}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
