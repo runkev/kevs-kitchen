@@ -18,17 +18,17 @@ const Slideshow = () => {
       stopOnHover={false}
       className="max-w-md mx-auto border-black border-2 rounded-2xl overflow-hidden"
     >
-      <Link to="/recipes/ChocolateChipBlondies">
+      <Link to="/recipes/1">
         <div>
           <img src={recipe1} alt="Recipe 1" className="w-full h-80 object-cover rounded-2xl" />
         </div>
       </Link>
-      <Link to="/recipes/SaltedCaramelBrownies">
+      <Link to="/recipes/2">
         <div>
           <img src={recipe2} alt="Recipe 2" className="w-full h-80 object-cover rounded-2xl" />
         </div>
       </Link>
-      <Link to="/recipes/BananaBread">
+      <Link to="/recipes/3">
         <div>
           <img src={recipe3} alt="Recipe 3" className="w-full h-80 object-cover rounded-2xl" />
         </div>
