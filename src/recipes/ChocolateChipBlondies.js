@@ -71,7 +71,16 @@ const ChocolateChipBlondies = () => {
           Add {isMetric ? ingredients[2].metricUnit : ingredients[2].englishUnit} {ingredients[2].name} and {isMetric ? ingredients[3].metricUnit : ingredients[3].englishUnit} {ingredients[3].name}. Mix until smooth and combined. 
         </li>
         <li className='mb-4'>
-
+          Using a baking spatula, fold in {isMetric ? ingredients[4].metricUnit : ingredients[4].englishUnit} of {ingredients[4].name} until completely combined. You can whisk it in if you want, just might get a bit messy :)
+        </li>
+        <li className='mb-4'> 
+          Fold in {isMetric ? ingredients[5].metricUnit : ingredients[5].englishUnit} of {ingredients[5].name} (or whatever mix-in you want really) 
+        </li>
+        <li className='mb-4'>
+          Spread the mix into your pan evenly. Place pan on the middle rack for about 25-30 minutes, or until the edges are browned slightly. 
+        </li>
+        <li className='mb-4'>
+          When done baking, place pan on a wire rack and allow it to cool completely in the pan before cutting.
         </li>
       </ol>
     </div>
