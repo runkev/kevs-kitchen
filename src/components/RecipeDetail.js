@@ -1,25 +1,42 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 const RecipeDetail = () => {
-  const navigate = useNavigate();
   const { id } = useParams();
+  const [recipe, setRecipe] = useState(null);
 
-  const handleGoBack = () => {
-    navigate(-1); // Navigate back by one step in the history stack
-  };
+  useEffect(() => {
+    // Simulated API call or data fetching to get the recipe details based on the id
+    const fetchRecipe = async () => {
+      try {
+        // Replace this with your actual API call or data fetching logic
+        const response = await fetch(`/api/recipes/${id}`);
+        const data = await response.json();
+        setRecipe(data);
+      } catch (error) {
+        console.error('Error fetching recipe details:', error);
+      }
+    };
+
+    fetchRecipe();
+  }, [id]);
+
+  if (!recipe) {
+    return (
+      <div>
+        <Navbar />
+        <p>Loading recipe details...</p>
+      </div>
+    );
+  }
 
   return (
     <div>
       <Navbar />
-      <h1>Recipe ID: {id}</h1>
-      <button
-        onClick={handleGoBack}
-        className="bg-slate-200 border-2 border-black rounded-md outline hover:outline-offset-4"
-      >
-        Go Back
-      </button>
+      <h1>{recipe.title}</h1>
+      <p>{recipe.description}</p>
+      {/* Render other recipe details */}
     </div>
   );
 };

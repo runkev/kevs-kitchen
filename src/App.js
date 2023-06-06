@@ -4,7 +4,7 @@ import Homepage from './components/Homepage';
 import Recipes from './components/Recipes';
 import About from './components/About';
 import Contact from './components/Contact';
-import RecipeDetail from './components/RecipeDetail';
+import ChocolateChipBlondies from './recipes/ChocolateChipBlondies';
 
 function App() {
   return (
@@ -14,7 +14,9 @@ function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/recipes/:id" element={<RecipeDetail />} />
+        <Route path="/recipes/1" element={<ChocolateChipBlondies />} />
+        <Route path="/recipes/2" element={<ChocolateChipBlondies />} />
+        <Route path="/recipes/3" element={<ChocolateChipBlondies />} />
         {/* Add other routes and components */}
       </Routes>
     </Router>
