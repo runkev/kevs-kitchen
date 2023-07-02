@@ -31,8 +31,8 @@ const Navbar = () => {
 
 return (
   <nav className="bg-yellow-300 py-4">
-    <div className="container mx-auto flex justify-between items-center">
-      <Link to="/" className="flex items-center text-gray-800">
+    <div className="mx-auto flex justify-between ">
+      <Link to="/" className=" text-gray-800">
         <FiHome className="h-6 w-6 mr-2 ml-2" />
       </Link>
 
