@@ -12,7 +12,7 @@ const Homepage = () => {
     <div className='bg-blue-50 font-mono'>
       <Navbar/>
       <div className="container mx-auto py-8 " >
-        <h1 className="text-4xl font-bold text-center mb-2">Welcome to Kev's Kitchen!</h1>
+        <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Kev's Kitchen!</h1>
         <p className="text-xl text-center mb-4">Simple, easy recipes without the mile-long life stories</p>
 
         <div className="flex flex-wrap justify-center gap-6">
