@@ -30,21 +30,21 @@ const Navbar = () => {
   // ...
 
 return (
-  <nav className="bg-yellow-300 py-4">
+  <nav className="bg-yellow-300 py-4 font-mono">
     <div className="mx-auto flex justify-between ">
-      <Link to="/" className=" text-gray-800">
+      <Link to="/" className=" text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg">
         <FiHome className="h-6 w-6 mr-2 ml-2" />
       </Link>
 
       {/* Nav Links */}
       <div className="flex items-center ml-0 mr-2 space-x-4">
-        <Link to="/recipes" className="text-gray-800 hover:text-yellow-600">
+        <Link to="/recipes" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg">
           Recipes
         </Link>
-        <Link to="/about" className="text-gray-800 hover:text-yellow-600">
+        <Link to="/about" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg">
           About
         </Link>
-        <Link to="/contact" className="text-gray-800 hover:text-yellow-600">
+        <Link to="/contact" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg">
           Contact
         </Link>
       </div>
