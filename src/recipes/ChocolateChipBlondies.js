@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 const ChocolateChipBlondies = () => {
@@ -21,12 +20,12 @@ const ChocolateChipBlondies = () => {
   const unitText = isMetric ? 'Metric' : 'English';
 
   return (
-    <div cl>
+    <div className='bg-blue-50'>
       <Navbar />
 
-      <div>
-        <div className="bg-slate-200 mx-auto">
-          <h1 className="font-bold flex flex-col items-center whitespace-nowrap max-w-screen sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl">
+      <div className='mx-2'>
+        <div className="">
+          <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
           </h1>
           <div className="grid grid-cols-3s justify-center mt-1">
@@ -45,7 +44,7 @@ const ChocolateChipBlondies = () => {
           </div>
         </div>
 
-        <h2 className="font-bold text-xl mt-4">INGREDIENTS</h2>
+        <h2 className="font-bold text-xl underline mt-4">INGREDIENTS</h2>
         <div className="flex items-center mt-2">
           <p className="mr-2">Change units:</p>
           <label
@@ -85,7 +84,7 @@ const ChocolateChipBlondies = () => {
           ))}
         </ul>
 
-        <h2 className="font-bold text-xl mt-4">INSTRUCTIONS</h2>
+        <h2 className="font-bold text-xl underline mt-4">INSTRUCTIONS</h2>
         <ol>
           <li className="mb-4">
             Preheat oven to 350F. Line a 9x9 inch pan with parchment paper. (You
