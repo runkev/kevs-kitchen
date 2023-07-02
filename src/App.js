@@ -5,6 +5,7 @@ import Recipes from './components/Recipes';
 import About from './components/About';
 import Contact from './components/Contact';
 import ChocolateChipBlondies from './recipes/ChocolateChipBlondies';
+import SaltedCaramelBrownies from './recipes/SaltedCaramelBrownies';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/recipes/1" element={<ChocolateChipBlondies />} />
-        <Route path="/recipes/2" element={<ChocolateChipBlondies />} />
+        <Route path="/recipes/2" element={<SaltedCaramelBrownies />} />
         <Route path="/recipes/3" element={<ChocolateChipBlondies />} />
         {/* Add other routes and components */}
       </Routes>
