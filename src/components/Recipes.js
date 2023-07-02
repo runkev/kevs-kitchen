@@ -20,7 +20,7 @@ const Recipes = () => {
   );
 
   return (
-    <div>
+    <div className='bg-blue-50'>
       <Navbar />
       <div className='container mx-auto px-4 max-w-6xl'>
         <h1 className="text-3xl font-bold mb-4">Recipes</h1>
@@ -37,7 +37,7 @@ const Recipes = () => {
 
         <ul className='w-full'>
           {filteredRecipes.map((recipe) => (
-            <li key={recipe.id} className="mb-2 border border-gray-300 rounded">
+            <li key={recipe.id} className="mb-2 bg-slate-50 border border-gray-300 rounded">
               <Link to={`/recipes/${recipe.id}`} className="block px-4 py-2 hover:bg-gray-200">
                 {recipe.title}
               </Link>
