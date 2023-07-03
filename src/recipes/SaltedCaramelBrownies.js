@@ -9,12 +9,12 @@ export const SaltedCaramelBrownies = () => {
   }
 
   const ingredientsBrownies = [
-    {name: 'cocoa powder', metricUnit: '65g', englishUnit: '3/4 cups'},
+    {name: 'salted butter', metricUnit: '171g', englishUnit: '12 tbsp'},
     {name: 'granulated sugar', metricUnit: '300g', englishUnit: '1 & 1/2 cups'},
     {name: 'eggs', metricUnit: '2', englishUnit: '2'},
-    {name: 'salted butter', metricUnit: '171g', englishUnit: '12 tbsp'},
-    {name: 'all-purpose flour', metricUnit: '63g', englishUnit: '1/2 cup'},
     {name: 'vanilla extract', metricUnit: '2 tsps', englishUnit: '2 tsps'},
+    {name: 'cocoa powder', metricUnit: '65g', englishUnit: '3/4 cups'},
+    {name: 'all-purpose flour', metricUnit: '63g', englishUnit: '1/2 cup'},
   ];
   
   const ingredientsCaramel = [
@@ -79,7 +79,7 @@ export const SaltedCaramelBrownies = () => {
 
         <div>
           <p className='italic underline mt-2'>For the Brownies:</p>
-          <ul className="font-mono mt-2">
+          <ul className="mt-2">
             {ingredientsBrownies.map((ingredient, index) => (
               <li key={index} className="mb-1">
                 <strong>
@@ -91,7 +91,7 @@ export const SaltedCaramelBrownies = () => {
           </ul>
           
           <p className='italic underline mt-2'>For the Caramel:</p>
-          <ul className="font-mono mt-2">
+          <ul className="mt-2">
             {ingredientsCaramel.map((ingredient, index) => (
               <li key={index} className="mb-1">
                 <strong>
@@ -103,45 +103,47 @@ export const SaltedCaramelBrownies = () => {
           </ul>
         </div>
 
-        <h2 className="font-mono font-bold text-xl underline mt-4">INSTRUCTIONS</h2>
+        <h2 className="font-bold text-xl underline mt-4">INSTRUCTIONS</h2>
+        <h3 className='italic underline'>Start with the caramel:</h3>
         <ol>
-          <li className="font-mono mb-4">
+          <li className="mb-4">
             Preheat oven to 350F. Line a 9x9 inch pan with parchment paper. (You
-            can use an 8x8 inch pan. but will have to adjust bake time by 5-10
+            can use an 8x8 inch pan. but will have to adjust bake time by about 5
             minutes.)
           </li>
-          <li className="font-mono mb-4">
-            Melt butter completely if you haven't already. In a large bowl, mix{" "}
-            {isMetric ? ingredientsBrownies[0].metricUnit : ingredientsBrownies[0].englishUnit}{" "}
-            {ingredientsBrownies[0].name} with{" "}
+          <li className='mb-4'>
+            In a medium saucepan, heat {" "} {isMetric ? ingredientsCaramel[0].metricUnit : ingredientsCaramel[0].englishUnit}{" "}{ingredientsCaramel[0].name} on medium-high heat. Occasionally stir the sugar with a spatula (make sure to get to the bottom of the saucepan). 
+          </li>
+          <li className='mb-4'>
+            The sugar will eventually melt and turn into an amber hue (about 5 minutes). At this point, remove the saucepan from heat and stir in {isMetric ? ingredientsCaramel[1].metricUnit : ingredientsCaramel[1].englishUnit}{" "}{ingredientsCaramel[1].name} (it should bubble a lot). Stir together until they mix completely (should take a couple minutes)
+          </li>
+          <li className='mb-4'>
+            Once mixed, pour in {isMetric ? ingredientsCaramel[2].metricUnit : ingredientsCaramel[2].englishUnit}{" "}{ingredientsCaramel[2].name} and stir until combined. Put the saucecpan back on the heat for 30-60 seconds while stirring. Now the caramel is done. Set aside to cool and begin making the brownie mix.
+          </li>
+        </ol>
+
+        <h3 className='italic underline'>Now make the brownie mix:</h3>
+        <ol>
+          <li className="mb-4">
+            Melt the {isMetric ? ingredientsBrownies[0].metricUnit : ingredientsBrownies[0].englishUnit}{" "}{ingredientsBrownies[0].name} in a microwave-safe bowl.
+          </li>
+          <li className='mb-4'>
+            In a large bowl, mix the melted butter,{" "}
             {isMetric ? ingredientsBrownies[1].metricUnit : ingredientsBrownies[1].englishUnit}{" "}
-            {ingredientsBrownies[1].name}
+            {ingredientsBrownies[1].name}, {isMetric ? ingredientsBrownies[2].metricUnit : ingredientsBrownies[2].englishUnit}{" "}
+            {ingredientsBrownies[2].name}, and {isMetric ? ingredientsBrownies[3].metricUnit : ingredientsBrownies[3].englishUnit}{" "}
+            {ingredientsBrownies[3].name}.
           </li>
-          <li className="font-mono mb-4">
-            Add{" "}
-            {isMetric ? ingredientsBrownies[2].metricUnit : ingredientsBrownies[2].englishUnit}{" "}
-            {ingredientsBrownies[2].name} and{" "}
-            {isMetric ? ingredientsBrownies[3].metricUnit : ingredientsBrownies[3].englishUnit}{" "}
-            {ingredientsBrownies[3].name}. Mix until smooth and combined.
+          <li className="mb-4">
+            Once those are combined, fold in {isMetric ? ingredientsBrownies[4].metricUnit : ingredientsBrownies[4].englishUnit}{" "}
+            {ingredientsBrownies[4].name} and {isMetric ? ingredientsBrownies[5].metricUnit : ingredientsBrownies[5].englishUnit}{" "}
+            {ingredientsBrownies[5].name}.
           </li>
-          <li className="font-mono mb-4">
-            Using a baking spatula, fold in{" "}
-            {isMetric ? ingredientsBrownies[4].metricUnit : ingredientsBrownies[4].englishUnit}{" "}
-            of {ingredientsBrownies[4].name} until completely combined. You can whisk it
-            in if you want, just might get a bit messy :)
+          <li className="mb-4">
+            Pour and spread about half of the mix evenly into your dish. Then pour 3/4 cup of the caramel (can go more or less if you want, honestly) over the brownie mix in the pan. Try to spread evenly without touching the edges. Spread the rest of the brownie mix on top (sealing as much of the caramel as possible).
           </li>
-          <li className="font-mono mb-4">
-            Fold in{" "}
-            {isMetric ? ingredientsBrownies[5].metricUnit : ingredientsBrownies[5].englishUnit}{" "}
-            of {ingredientsBrownies[5].name} (or whatever mix-in you want really)
-          </li>
-          <li className="font-mono mb-4">
-            Spread the mix into your pan evenly. Place pan on the middle rack
-            for about 25-30 minutes, or until the edges are browned slightly.
-          </li>
-          <li className="font-mono mb-4">
-            When done baking, place pan on a wire rack and allow it to cool
-            completely in the pan before cutting.
+          <li className="mb-4">
+            Bake for about 35 minutes or until a knife or toothpick comes out clean when inserted in the center of the brownies. When done baking, let the brownies cool completely in the pan (on top of a cooling rack) before cutting and serving. 
           </li>
         </ol>
       </div>
