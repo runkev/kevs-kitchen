@@ -16,9 +16,7 @@ const ChocolateChipBlondies = () => {
     {name: 'all-purpose flour', metricUnit: '190g', englishUnit: '1 & 1/2 cups'},
     {name: 'semi-sweet chocolate chips', metricUnit: '175g', englishUnit: '1 cup'}
   ];
-
-  const unitText = isMetric ? 'Metric' : 'English';
-
+  
   return (
     <div className='bg-blue-50'>
       <Navbar />

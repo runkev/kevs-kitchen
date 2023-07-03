@@ -20,7 +20,7 @@ export const SaltedCaramelBrownies = () => {
   const ingredientsCaramel = [
     {name: 'granulated sugar', metricUnit: '200g', englishUnit: '1 cup'},
     {name: 'salted butter', metricUnit: '86g', englishUnit: '6 tbsp'},
-    {name: 'heavy cream', metricUnit: '119ml', englishUnit: '1/2 cup'},
+    {name: 'heavy cream', metricUnit: '1/2 cup', englishUnit: '1/2 cup'},
   ]
 
   return (
@@ -108,8 +108,7 @@ export const SaltedCaramelBrownies = () => {
         <ol>
           <li className="mb-4">
             Preheat oven to 350F. Line a 9x9 inch pan with parchment paper. (You
-            can use an 8x8 inch pan. but will have to adjust bake time by about 5
-            minutes.)
+            can use an 8x8 inch pan. but will have to adjust bake time by a few minutes.)
           </li>
           <li className='mb-4'>
             In a medium saucepan, heat {" "} {isMetric ? ingredientsCaramel[0].metricUnit : ingredientsCaramel[0].englishUnit}{" "}{ingredientsCaramel[0].name} on medium-high heat. Occasionally stir the sugar with a spatula (make sure to get to the bottom of the saucepan). 
