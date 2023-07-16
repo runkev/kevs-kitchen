@@ -20,7 +20,7 @@ const Recipes = () => {
   );
 
   return (
-    <div className='bg-blue-50'>
+    <div className='bg-blue-50 min-h-screen min-w-full'>
       <Navbar />
       <div className='container mx-auto px-4 max-w-6xl'>
         <h1 className="text-3xl font-bold mb-4">Recipes</h1>

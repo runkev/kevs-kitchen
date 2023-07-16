@@ -24,7 +24,7 @@ export const SaltedCaramelBrownies = () => {
   ]
 
   return (
-    <div className='bg-blue-50'>
+    <div className='bg-blue-50 min-h-screen min-w-full'>
       <Navbar />
 
       <div className='font-mono mx-2'>
