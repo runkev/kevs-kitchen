@@ -9,7 +9,7 @@ import recipe3 from '../assets/recipe3.jpg';
 
 const Homepage = () => {
   return (
-    <div className=' bg-blue-50 min-h-screen min-w-full font-mono border-2 border-black border-solid'>
+    <div className=' bg-slate-100 min-h-screen min-w-full font-mono border-2 border-black border-solid'>
       <Navbar/>
       <div className="container mx-auto py-8" >
         <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Kev's Kitchen!</h1>
