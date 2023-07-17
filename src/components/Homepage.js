@@ -11,9 +11,12 @@ const Homepage = () => {
   return (
     <div className=' bg-slate-100 min-h-screen min-w-full font-mono border-2 border-black border-solid'>
       <Navbar/>
-      <div className="container mx-auto py-8" >
-        <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Kev's Kitchen!</h1>
-        <p className="text-xl text-center mb-4">Simple, easy recipes without the mile-long life stories</p>
+      <div className="container mx-auto py-4" >
+        <div className='mx-4'>
+          <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Kev's Kitchen!</h1>
+          <p className="text-xl text-center mb-8">Simple, easy recipes (without the mile-long life stories...)</p>
+          <p className="text-base text-center mb-4">Here are some of my favorites. Navigate to "Recipes" for others! </p>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-6">
           <Link to="/recipes/1" className="hover:scale-105">
