@@ -27,7 +27,7 @@ const ChocolateChipBlondies = () => {
           <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
           </h1>
-          <div className="grid grid-cols-3s justify-center mt-1">
+          <div className="grid grid-cols-3s justify-center mt-1 text-xs">
             <div className="border border-black border-solid rounded-lg mx-1 bg-white">
               <h3 className="font-semibold text-center">Prep Time</h3>
               <p className="text-center">10 min</p>
