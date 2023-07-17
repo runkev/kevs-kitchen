@@ -6,8 +6,8 @@ const Recipes = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const recipes = [
     { id: 1, title: 'Chocolate Chip Blondies' },
-    { id: 2, title: 'Banana Bread' },
-    { id: 3, title: 'Salted Caramel Brownies' },
+    { id: 2, title: 'Salted Caramel Brownies' },
+    { id: 3, title: 'Banana Bread' },
   ];
 
   const handleSearchChange = (e) => {
