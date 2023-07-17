@@ -13,7 +13,7 @@ const Homepage = () => {
       <Navbar/>
       <div className="container mx-auto py-4" >
         <div className='mx-4'>
-          <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Kev's Kitchen!</h1>
+          <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Petow's Pantry!</h1>
           <p className="text-xl text-center mb-8">Simple, easy recipes (without the mile-long life stories...)</p>
           <p className="text-base text-center mb-4">Here are some of my favorites. Navigate to "Recipes" for others! </p>
         </div>
