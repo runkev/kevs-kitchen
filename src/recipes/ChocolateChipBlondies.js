@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import recipe1 from '../assets/recipe1.jpg';
 
 const ChocolateChipBlondies = () => {
   const [isMetric, setIsMetric] = useState(false)
@@ -18,31 +19,39 @@ const ChocolateChipBlondies = () => {
   ];
   
   return (
-    <div className='bg-blue-50 min-h-screen min-w-full border-black border-solid border-2'>
+    <div className="bg-slate-100 min-h-screen min-w-full border-2 border-black border-solid">
       <Navbar />
 
-      <div className='font-mono mx-2 '>
+      <div className="font-mono mx-2 ">
         <div className="">
           <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
           </h1>
           <div className="grid grid-cols-3s justify-center mt-1">
-            <div className='border border-black border-solid rounded-lg mx-1 bg-white'>
+            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
               <h3 className="font-semibold text-center">Prep Time</h3>
               <p className="text-center">10 min</p>
             </div>
-            <div className='border border-black border-solid rounded-lg mx-1 bg-white'>
+            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
               <h3 className="font-semibold text-center">Bake Time</h3>
               <p className="text-center">25 min</p>
             </div>
-            <div className='border border-black border-solid rounded-lg mx-1 bg-white'>
+            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
               <h3 className="font-semibold text-center">Total Time</h3>
               <p className="text-center">35 min</p>
             </div>
           </div>
         </div>
 
-        <div className='border border-black border-solid rounded-lg mt-2 p-1 bg-yellow-100'>
+        <div className="border-black border-2 rounded-xl overflow-hidden drop-shadow-2xl mt-2 mx-auto max-w-sm">
+          <img
+            src={recipe1}
+            alt="Recipe 1"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
+        <div className="border border-black border-solid rounded-lg mt-2 p-1 bg-gradient-to-b from-white to-yellow-100">
           <h2 className="font-mono font-bold text-xl underline">INGREDIENTS</h2>
           <div className="font-mono flex items-center mt-2">
             <p className="mr-2">Change units:</p>
@@ -82,40 +91,54 @@ const ChocolateChipBlondies = () => {
               </li>
             ))}
           </ul>
-
         </div>
 
-        <div className='border border-black border-solid rounded-lg mt-2 p-1 bg-yellow-100'>
-          <h2 className="font-mono font-bold text-xl underline ">INSTRUCTIONS</h2>
+        <div className="border border-black border-solid rounded-lg my-2 p-1 bg-gradient-to-b from-yellow-100 to-orange-200">
+          <h2 className="font-mono font-bold text-xl underline ">
+            INSTRUCTIONS
+          </h2>
           <ol>
             <li className="font-mono mb-4">
-              Preheat oven to 350F. Line a 9x9 inch pan with parchment paper. (You
-              can use an 8x8 inch pan. but will have to adjust bake time by 5-10
-              minutes.)
+              Preheat oven to 350F. Line a 9x9 inch pan with parchment paper.
+              (You can use an 8x8 inch pan. but will have to adjust bake time by
+              5-10 minutes.)
             </li>
             <li className="font-mono mb-4">
-              Melt butter completely if you haven't already. In a large bowl, mix{" "}
-              {isMetric ? ingredients[0].metricUnit : ingredients[0].englishUnit}{" "}
+              Melt butter completely if you haven't already. In a large bowl,
+              mix{" "}
+              {isMetric
+                ? ingredients[0].metricUnit
+                : ingredients[0].englishUnit}{" "}
               {ingredients[0].name} with{" "}
-              {isMetric ? ingredients[1].metricUnit : ingredients[1].englishUnit}{" "}
+              {isMetric
+                ? ingredients[1].metricUnit
+                : ingredients[1].englishUnit}{" "}
               {ingredients[1].name}
             </li>
             <li className="font-mono mb-4">
               Add{" "}
-              {isMetric ? ingredients[2].metricUnit : ingredients[2].englishUnit}{" "}
+              {isMetric
+                ? ingredients[2].metricUnit
+                : ingredients[2].englishUnit}{" "}
               {ingredients[2].name} and{" "}
-              {isMetric ? ingredients[3].metricUnit : ingredients[3].englishUnit}{" "}
+              {isMetric
+                ? ingredients[3].metricUnit
+                : ingredients[3].englishUnit}{" "}
               {ingredients[3].name}. Mix until smooth and combined.
             </li>
             <li className="font-mono mb-4">
               Using a baking spatula, fold in{" "}
-              {isMetric ? ingredients[4].metricUnit : ingredients[4].englishUnit}{" "}
-              of {ingredients[4].name} until completely combined. You can whisk it
-              in if you want, just might get a bit messy :)
+              {isMetric
+                ? ingredients[4].metricUnit
+                : ingredients[4].englishUnit}{" "}
+              of {ingredients[4].name} until completely combined. You can whisk
+              it in if you want, just might get a bit messy :)
             </li>
             <li className="font-mono mb-4">
               Fold in{" "}
-              {isMetric ? ingredients[5].metricUnit : ingredients[5].englishUnit}{" "}
+              {isMetric
+                ? ingredients[5].metricUnit
+                : ingredients[5].englishUnit}{" "}
               of {ingredients[5].name} (or whatever mix-in you want really)
             </li>
             <li className="font-mono mb-4">
@@ -128,7 +151,6 @@ const ChocolateChipBlondies = () => {
             </li>
           </ol>
         </div>
-
       </div>
     </div>
   );
