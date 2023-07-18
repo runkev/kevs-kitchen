@@ -31,7 +31,7 @@ const Navbar = () => {
   // ...
 
 return (
-  <nav className="bg-cream py-4 font-mono uppercase font-bold container">
+  <nav className="bg-cream py-4 font-mono uppercase font-bold container mx-auto">
     <div className="mx-auto flex justify-between rounded-lg">
       <Link
         to="/"
