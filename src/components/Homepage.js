@@ -1,5 +1,4 @@
 import React from 'react';
-import Slideshow from './Slideshow';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 
@@ -9,13 +8,20 @@ import recipe3 from '../assets/recipe3.jpg';
 
 const Homepage = () => {
   return (
-    <div className=' bg-slate-100 min-h-screen min-w-full font-mono border-2 border-black border-solid'>
+    <div className=' bg-cream min-h-screen font-mono border-2 border-black border-solid'>
       <Navbar/>
-      <div className="container mx-auto py-4" >
-        <div className='mx-4'>
-          <h1 className="text-4xl font-bold text-center mb-2 uppercase">Welcome to Petow's Pantry!</h1>
-          <p className="text-xl text-center mb-8">Simple, easy recipes (without the mile-long life stories...)</p>
-          <p className="text-base text-center mb-4">Here are some of my favorites. Navigate to "Recipes" for others! </p>
+      <div className="container" >
+        <div className=' bg-brown flex justify-center'>
+          <div className='basis-1/4'>
+            <img src={recipe1} alt="Recipe 1" className="w-40 h-30" />
+          </div>
+          <div className='basis-1/2'>
+            <h1 className="text-4xl font-bold text-center text-white mb-2 uppercase">Welcome to Petow's Pantry!</h1>
+            <p className="text-xl text-center text-cookie mb-8">Simple, easy recipes (without the mile-long life stories...)</p>
+          </div>
+          <div className='basis-1/4'>
+            <img src={recipe1} alt="Recipe 1" className="w-40 h-30" />
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-6">

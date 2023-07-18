@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiHome } from 'react-icons/fi';
+import chef_icon from '../assets/chef_icon.png'
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,21 +31,37 @@ const Navbar = () => {
   // ...
 
 return (
-  <nav className="bg-yellow-300 py-4 font-mono uppercase font-bold border-b-2 border-black border-solid">
+  <nav className="bg-cream py-4 font-mono uppercase font-bold container">
     <div className="mx-auto flex justify-between rounded-lg">
-      <Link to="/" className=" text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg">
-        <FiHome className="h-6 w-6 mr-2 ml-2" />
+      <Link
+        to="/"
+        className=" text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg"
+      >
+        <img
+          src={chef_icon}
+          alt="home"
+          className="h-6 w-6 mr-2 ml-2"
+        ></img>
       </Link>
 
       {/* Nav Links */}
       <div className="flex items-center ml-0 mr-2 space-x-4">
-        <Link to="/recipes" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md">
+        <Link
+          to="/recipes"
+          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+        >
           Recipes
         </Link>
-        <Link to="/about" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md">
+        <Link
+          to="/about"
+          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+        >
           About
         </Link>
-        <Link to="/contact" className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md">
+        <Link
+          to="/contact"
+          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+        >
           Contact
         </Link>
       </div>
