@@ -35,7 +35,7 @@ return (
     <div className="mx-auto flex justify-between rounded-lg">
       <Link
         to="/"
-        className=" text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg"
+        className=" text-gray-800 hover:drop-shadow-2xl"
       >
         <img
           src={chef_icon}
@@ -48,19 +48,19 @@ return (
       <div className="flex items-center ml-0 mr-2 space-x-4">
         <Link
           to="/recipes"
-          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+          className="text-gray-800 hover:text-cookie hover:drop-shadow-2xl rounded-md"
         >
           Recipes
         </Link>
         <Link
           to="/about"
-          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+          className="text-gray-800 hover:text-cookie hover:drop-shadow-2xl rounded-md"
         >
           About
         </Link>
         <Link
           to="/contact"
-          className="text-gray-800 hover:text-blue-600 hover:scale-105 hover:shadow-lg rounded-md"
+          className="text-gray-800 hover:text-cookie hover:drop-shadow-2xl rounded-md"
         >
           Contact
         </Link>
