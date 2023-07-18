@@ -25,10 +25,10 @@ export const SaltedCaramelBrownies = () => {
   ]
 
   return (
-    <div className="bg-slate-100 min-h-screen min-w-full border-2 border-black border-solid">
+    <div className="bg-cream min-h-screen min-w-full border-2 border-black border-solid">
       <Navbar />
 
-      <div className="font-mono mx-2">
+      <div className="font-hk-grotesk mx-2">
         <div className="">
           <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             SALTED CARAMEL BROWNIES
@@ -57,9 +57,9 @@ export const SaltedCaramelBrownies = () => {
           />
         </div>
 
-        <div className="border border-black border-solid rounded-lg mt-2 p-1 bg-gradient-to-b from-white to-yellow-100">
-          <h2 className="font-mono font-bold text-xl underline">INGREDIENTS</h2>
-          <div className="font-mono flex items-center mt-2">
+        <div className="border border-black border-solid rounded-lg mt-2 p-1">
+          <h2 className="font-bold text-xl underline">INGREDIENTS</h2>
+          <div className="flex items-center mt-2">
             <p className="mr-2">Change units:</p>
             <label
               className={`flex items-center ${
@@ -114,7 +114,7 @@ export const SaltedCaramelBrownies = () => {
           </div>
         </div>
 
-        <div className="border border-black border-solid rounded-lg my-2 p-1 bg-gradient-to-b from-yellow-100 to-orange-200">
+        <div className="border border-black border-solid rounded-lg my-2 p-1">
           <h2 className="font-bold text-xl underline">INSTRUCTIONS</h2>
           <h3 className="italic underline">Start with the caramel:</h3>
           <ol>

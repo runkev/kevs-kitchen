@@ -19,10 +19,10 @@ const ChocolateChipBlondies = () => {
   ];
   
   return (
-    <div className="bg-slate-100 min-h-screen min-w-full border-2 border-black border-solid">
+    <div className="bg-cream min-h-screen min-w-full border-2 border-black border-solid font-hk-grotesk">
       <Navbar />
 
-      <div className="font-mono mx-2 ">
+      <div className="font-hk-grotesk mx-2 ">
         <div className="">
           <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
@@ -51,9 +51,9 @@ const ChocolateChipBlondies = () => {
           />
         </div>
 
-        <div className="border border-black border-solid rounded-lg mt-2 p-1 bg-gradient-to-b from-white to-yellow-100">
-          <h2 className="font-mono font-bold text-xl underline">INGREDIENTS</h2>
-          <div className="font-mono flex items-center mt-2">
+        <div className="border border-black border-solid rounded-lg mt-2 p-1">
+          <h2 className="font-bold text-xl underline">INGREDIENTS</h2>
+          <div className="flex items-center mt-2">
             <p className="mr-2">Change units:</p>
             <label
               className={`flex items-center ${
@@ -81,7 +81,7 @@ const ChocolateChipBlondies = () => {
             </label>
           </div>
 
-          <ul className="font-mono mt-2">
+          <ul className="mt-2">
             {ingredients.map((ingredient, index) => (
               <li key={index} className="mb-1">
                 <strong>
@@ -93,17 +93,17 @@ const ChocolateChipBlondies = () => {
           </ul>
         </div>
 
-        <div className="border border-black border-solid rounded-lg my-2 p-1 bg-gradient-to-b from-yellow-100 to-orange-200">
-          <h2 className="font-mono font-bold text-xl underline ">
+        <div className="border border-black border-solid rounded-lg my-2 p-1">
+          <h2 className="font-bold text-xl underline ">
             INSTRUCTIONS
           </h2>
           <ol>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Preheat oven to 350F. Line a 9x9 inch pan with parchment paper.
               (You can use an 8x8 inch pan. but will have to adjust bake time by
               5-10 minutes.)
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Melt butter completely if you haven't already. In a large bowl,
               mix{" "}
               {isMetric
@@ -115,7 +115,7 @@ const ChocolateChipBlondies = () => {
                 : ingredients[1].englishUnit}{" "}
               {ingredients[1].name}
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Add{" "}
               {isMetric
                 ? ingredients[2].metricUnit
@@ -126,7 +126,7 @@ const ChocolateChipBlondies = () => {
                 : ingredients[3].englishUnit}{" "}
               {ingredients[3].name}. Mix until smooth and combined.
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Using a baking spatula, fold in{" "}
               {isMetric
                 ? ingredients[4].metricUnit
@@ -134,18 +134,18 @@ const ChocolateChipBlondies = () => {
               of {ingredients[4].name} until completely combined. You can whisk
               it in if you want, just might get a bit messy :)
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Fold in{" "}
               {isMetric
                 ? ingredients[5].metricUnit
                 : ingredients[5].englishUnit}{" "}
               of {ingredients[5].name} (or whatever mix-in you want really)
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               Spread the mix into your pan evenly. Place pan on the middle rack
               for about 25-30 minutes, or until the edges are browned slightly.
             </li>
-            <li className="font-mono mb-4">
+            <li className="mb-4">
               When done baking, place pan on a wire rack and allow it to cool
               completely in the pan before cutting.
             </li>
