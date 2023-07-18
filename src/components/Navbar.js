@@ -31,7 +31,7 @@ const Navbar = () => {
   // ...
 
 return (
-  <nav className="bg-cream py-4 font-mono uppercase font-bold container mx-auto">
+  <nav className="bg-cream py-4 font-hk-grotesk uppercase font-bold container mx-auto">
     <div className="mx-auto flex justify-between rounded-lg">
       <Link
         to="/"
@@ -40,7 +40,7 @@ return (
         <img
           src={chef_icon}
           alt="home"
-          className="h-6 w-6 mr-2 ml-2"
+          className="h-6 w-5 mr-2 ml-2"
         ></img>
       </Link>
 

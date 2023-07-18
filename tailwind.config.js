@@ -13,6 +13,10 @@ module.exports = {
         'cookie': '#DEA668',
       },
 
+      fontFamily: {
+        'hk-grotesk': ['HK Grotesk', 'sans-serif'],
+      },
+
       gridTemplateColumns: {
         //more narrow 3 columns
         '3s': 'repeat(3, minmax(0, 100px))',

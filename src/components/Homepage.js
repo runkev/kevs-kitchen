@@ -9,7 +9,7 @@ import brownies_tray from '../assets/brownies_tray.jpg';
 
 const Homepage = () => {
   return (
-    <div className=" bg-cream min-h-screen font-mono border-2 border-black border-solid">
+    <div className=" bg-cream min-h-screen font-hk-grotesk border-2 border-black border-solid">
       <Navbar />
       <div className="container mx-auto">
         <div
@@ -39,42 +39,46 @@ const Homepage = () => {
           </div>
         </div> */}
 
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className='text-center text-2xl font-bold my-6'>
+          <h1>MOST POPULAR</h1>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-4 mt-2">
           <Link to="/recipes/1" className="hover:scale-105">
-            <div className="h-64 w-80 border-black border-4 rounded-xl overflow-hidden drop-shadow-2xl">
-              <h1 className="text-center font-bold bg-yellow-200 border-b-4 border-b-black">
-                Chocolate Chip Blondies
-              </h1>
+            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
               <img
                 src={recipe1}
                 alt="Recipe 1"
                 className="w-full h-full object-cover"
               />
             </div>
+            <h1 className='text-center font-bold uppercase'>
+              Chocolate Chip Blondies
+            </h1>
           </Link>
           <Link to="/recipes/2" className="hover:scale-105">
-            <div className="h-64 w-80 border-black border-4 rounded-xl overflow-hidden drop-shadow-2xl">
-              <h1 className="text-center font-bold bg-yellow-200 border-b-4 border-b-black">
-                Salted Caramel Brownies
-              </h1>
+            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
               <img
                 src={recipe2}
                 alt="Recipe 2"
                 className="w-full h-full object-cover"
               />
             </div>
+            <h1 className='text-center font-bold uppercase'>
+              Salted Caramel Brownies
+            </h1>
           </Link>
           <Link to="/recipes/3" className="hover:scale-105">
-            <div className="h-64 w-80 border-black border-4 rounded-xl overflow-hidden drop-shadow-2xl">
-              <h1 className="text-center font-bold bg-yellow-200 border-b-4 border-b-black">
-                Healthy(er) Banana Bread
-              </h1>
+            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
               <img
                 src={recipe3}
                 alt="Recipe 3"
                 className="w-full h-full object-cover"
               />
             </div>
+            <h1 className='text-center font-bold uppercase'>
+              Healthy(er) Banana Bread
+            </h1>
           </Link>
         </div>
       </div>
