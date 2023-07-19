@@ -28,7 +28,7 @@ export const SaltedCaramelBrownies = () => {
     <div className="bg-cream min-h-screen min-w-full border-2 border-black border-solid">
       <Navbar />
 
-      <div className="font-hk-grotesk mx-2">
+      <div className="font-hk-grotesk mx-4">
         <div className="">
           <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             SALTED CARAMEL BROWNIES

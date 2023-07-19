@@ -11,9 +11,9 @@ const Homepage = () => {
   return (
     <div className=" bg-cream min-h-screen font-hk-grotesk border-2 border-black border-solid">
       <Navbar />
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div
-          className="bg-brown flex justify-center items-center bg-cover bg-no-repeat bg-[50%] h-72 "
+          className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-72 "
           style={{ backgroundImage: `url(${brownies_tray})` }}
         >
           <div className="">
@@ -25,37 +25,12 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-
-        {/* <div className=' bg-brown flex justify-center'>
-          <div className='basis-1/4'>
-            <img src={recipe1} alt="Recipe 1" className="w-40 h-30" />
-          </div>
-          <div className='basis-1/2'>
-            <h1 className="text-4xl font-bold text-center text-white mb-2 uppercase">Welcome to Petow's Pantry!</h1>
-            <p className="text-xl text-center text-cookie mb-8">Simple, easy recipes (without the mile-long life stories...)</p>
-          </div>
-          <div className='basis-1/4'>
-            <img src={recipe1} alt="Recipe 1" className="w-40 h-30" />
-          </div>
-        </div> */}
-
+        
         <div className='text-center text-2xl font-bold my-6'>
           <h1>MOST POPULAR</h1>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mt-2">
-          <Link to="/recipes/1" className="hover:scale-105">
-            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
-              <img
-                src={recipe1}
-                alt="Recipe 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className='text-center font-bold uppercase'>
-              Chocolate Chip Blondies
-            </h1>
-          </Link>
           <Link to="/recipes/2" className="hover:scale-105">
             <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
               <img
@@ -66,6 +41,18 @@ const Homepage = () => {
             </div>
             <h1 className='text-center font-bold uppercase'>
               Salted Caramel Brownies
+            </h1>
+          </Link>
+          <Link to="/recipes/1" className="hover:scale-105">
+            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
+              <img
+                src={recipe1}
+                alt="Recipe 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h1 className='text-center font-bold uppercase'>
+              Chocolate Chip Blondies
             </h1>
           </Link>
           <Link to="/recipes/3" className="hover:scale-105">
