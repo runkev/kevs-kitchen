@@ -19,24 +19,24 @@ const ChocolateChipBlondies = () => {
   ];
   
   return (
-    <div className="bg-cream min-h-screen min-w-full border-2 border-black border-solid font-hk-grotesk">
+    <div className="bg-cream min-h-screen min-w-full font-hk-grotesk">
       <Navbar />
 
-      <div className="font-hk-grotesk mx-2 ">
-        <div className="">
-          <h1 className="font-bold flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
+      <div className="font-hk-grotesk">
+        <div className="bg-brown py-2 w-screen">
+          <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
           </h1>
           <div className="grid grid-cols-3s justify-center mt-1 text-xs">
-            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
+            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
               <h3 className="font-semibold text-center">Prep Time</h3>
               <p className="text-center">10 min</p>
             </div>
-            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
+            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
               <h3 className="font-semibold text-center">Bake Time</h3>
               <p className="text-center">25 min</p>
             </div>
-            <div className="border border-black border-solid rounded-lg mx-1 bg-white">
+            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
               <h3 className="font-semibold text-center">Total Time</h3>
               <p className="text-center">35 min</p>
             </div>
@@ -51,7 +51,7 @@ const ChocolateChipBlondies = () => {
           />
         </div>
 
-        <div className="border border-black border-solid rounded-lg mt-2 p-1">
+        <div className="border border-black border-solid rounded-lg mt-2 mx-2 p-1">
           <h2 className="font-bold text-xl underline">INGREDIENTS</h2>
           <div className="flex items-center mt-2">
             <p className="mr-2">Change units:</p>
@@ -93,7 +93,7 @@ const ChocolateChipBlondies = () => {
           </ul>
         </div>
 
-        <div className="border border-black border-solid rounded-lg my-2 p-1">
+        <div className="border border-black border-solid rounded-lg my-2 mx-2 p-1">
           <h2 className="font-bold text-xl underline ">
             INSTRUCTIONS
           </h2>

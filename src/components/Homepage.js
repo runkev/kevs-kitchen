@@ -20,12 +20,12 @@ const Homepage = () => {
             <h1 className="text-4xl font-bold text-center text-white mb-2 uppercase">
               Welcome to Petow's Pantry!
             </h1>
-            <p className="text-xl text-center text-cookie mb-8">
+            <p className="text-xl text-center text-cookie mb-8 px-2">
               Simple, easy recipes (without the mile-long life stories...)
             </p>
           </div>
         </div>
-        
+
         <div className='text-center text-2xl font-bold my-6'>
           <h1>MOST POPULAR</h1>
         </div>
