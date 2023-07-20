@@ -6,6 +6,8 @@ import recipe1 from '../assets/recipe1.jpg';
 import recipe2 from '../assets/recipe2.jpg';
 import recipe3 from '../assets/recipe3.jpg';
 import brownies_tray from '../assets/brownies_tray.jpg';
+import { FaInstagram } from 'react-icons/fa';
+
 
 const Homepage = () => {
   return (
@@ -13,20 +15,29 @@ const Homepage = () => {
       <Navbar />
       <div className="mx-auto">
         <div
-          className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-72 border-solid border-cookie border-y-4"
+          className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-60 border-solid border-cookie border-y-4"
           style={{ backgroundImage: `url(${brownies_tray})` }}
         >
           <div className="">
             <h1 className="text-4xl font-bold text-center text-white mb-2 uppercase">
               Welcome to Petow's Pantry!
             </h1>
-            <p className="text-xl text-center text-cookie mb-8 px-2">
+            <p className="text-xl text-center text-cookie px-2">
               Simple, easy recipes (without the mile-long life stories...)
             </p>
+            {/* <a
+              href="https://www.instagram.com/kevinpetow"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-cookie flex justify-center"
+            >
+              <FaInstagram className="inline-block w-6 h-6 mr-1" />
+              <span></span>
+            </a> */}
           </div>
         </div>
 
-        <div className='text-center text-2xl font-bold my-6 '>
+        <div className="text-center text-2xl font-bold my-6 ">
           <h1>MOST POPULAR</h1>
         </div>
 
@@ -39,7 +50,7 @@ const Homepage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className='text-center font-bold uppercase'>
+            <h1 className="text-center font-bold uppercase">
               Salted Caramel Brownies
             </h1>
           </Link>
@@ -51,7 +62,7 @@ const Homepage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className='text-center font-bold uppercase'>
+            <h1 className="text-center font-bold uppercase">
               Chocolate Chip Blondies
             </h1>
           </Link>
@@ -63,11 +74,21 @@ const Homepage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className='text-center font-bold uppercase'>
+            <h1 className="text-center font-bold uppercase">
               Healthy(er) Banana Bread
             </h1>
           </Link>
         </div>
+
+        <a
+          href="https://www.instagram.com/kevinpetow"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-800 hover:text-cookie flex justify-center my-8"
+        >
+          <FaInstagram className="inline-block w-6 h-6 mr-1" />
+        </a>
+
       </div>
     </div>
   );
