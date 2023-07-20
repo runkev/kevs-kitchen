@@ -55,7 +55,7 @@ const ChocolateChipBlondies = () => {
           </div>
         </div>
 
-        <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie rounded-lg">
+        <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie">
           <div className="flex flex-col md:flex-row gap-4 justify-between">
             {/* Image Div */}
             <div className="overflow-hidden drop-shadow-2xl max-w-md md:order-2 mx-2 rounded-lg">
