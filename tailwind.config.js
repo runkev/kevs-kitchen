@@ -21,11 +21,6 @@ module.exports = {
         //more narrow 3 columns
         '3s': 'repeat(3, minmax(0, 100px))',
       },
-
-      screens: {
-        'sm': '576px',
-        
-      },
     },
   },
   plugins: [],
