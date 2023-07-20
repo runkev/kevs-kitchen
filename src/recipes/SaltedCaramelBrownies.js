@@ -9,6 +9,28 @@ export const SaltedCaramelBrownies = () => {
     setIsMetric(!isMetric);
   }
 
+  const getBrownieIngredient = (i) => {
+    const ingredient = ingredientsBrownies[i];
+    const unit = isMetric ? ingredient.metricUnit : ingredient.englishUnit;
+
+    return (
+      <>
+        {unit} of {ingredient.name}
+      </>
+    );
+  }
+  
+  const getCaramelIngredient = (i) => {
+    const ingredient = ingredientsCaramel[i];
+    const unit = isMetric ? ingredient.metricUnit : ingredient.englishUnit;
+
+    return (
+      <>
+        {unit} of {ingredient.name}
+      </>
+    );
+  }
+
   const ingredientsBrownies = [
     {name: 'salted butter', metricUnit: '171g', englishUnit: '12 tbsp'},
     {name: 'granulated sugar', metricUnit: '300g', englishUnit: '1 & 1/2 cups'},
@@ -137,31 +159,19 @@ export const SaltedCaramelBrownies = () => {
                 by a few minutes.)
               </li>
               <li className="mb-4">
-                In a medium saucepan, heat{" "}
-                {isMetric
-                  ? ingredientsCaramel[0].metricUnit
-                  : ingredientsCaramel[0].englishUnit}{" "}
-                {ingredientsCaramel[0].name} on medium-high heat. Occasionally
+                In a medium saucepan, heat {getCaramelIngredient(0)} on medium-high heat. Occasionally
                 stir the sugar with a spatula (make sure to get to the bottom of
                 the saucepan).
               </li>
               <li className="mb-4">
                 The sugar will eventually melt and turn into an amber hue (about
                 5 minutes). At this point, remove the saucepan from heat and
-                stir in{" "}
-                {isMetric
-                  ? ingredientsCaramel[1].metricUnit
-                  : ingredientsCaramel[1].englishUnit}{" "}
-                {ingredientsCaramel[1].name} (it should bubble a lot). Stir
+                stir in {getCaramelIngredient(1)} (it should bubble a lot). Stir
                 together until they mix completely (should take a couple
                 minutes)
               </li>
               <li className="mb-4">
-                Once mixed, pour in{" "}
-                {isMetric
-                  ? ingredientsCaramel[2].metricUnit
-                  : ingredientsCaramel[2].englishUnit}{" "}
-                {ingredientsCaramel[2].name} and stir until combined. Put the
+                Once mixed, pour in {getCaramelIngredient(2)} and stir until combined. Put the
                 saucecpan back on the heat for 30-60 seconds while stirring. Now
                 the caramel is done. Set aside to cool and begin making the
                 brownie mix.
@@ -171,37 +181,13 @@ export const SaltedCaramelBrownies = () => {
             <h3 className="italic underline">Now make the brownie mix:</h3>
             <ol>
               <li className="mb-4">
-                Melt the{" "}
-                {isMetric
-                  ? ingredientsBrownies[0].metricUnit
-                  : ingredientsBrownies[0].englishUnit}{" "}
-                {ingredientsBrownies[0].name} in a microwave-safe bowl.
+                Melt the {getBrownieIngredient(0)} in a microwave-safe bowl.
               </li>
               <li className="mb-4">
-                In a large bowl, mix the melted butter,{" "}
-                {isMetric
-                  ? ingredientsBrownies[1].metricUnit
-                  : ingredientsBrownies[1].englishUnit}{" "}
-                {ingredientsBrownies[1].name},{" "}
-                {isMetric
-                  ? ingredientsBrownies[2].metricUnit
-                  : ingredientsBrownies[2].englishUnit}{" "}
-                {ingredientsBrownies[2].name}, and{" "}
-                {isMetric
-                  ? ingredientsBrownies[3].metricUnit
-                  : ingredientsBrownies[3].englishUnit}{" "}
-                {ingredientsBrownies[3].name}.
+                In a large bowl, mix the melted butter, {getBrownieIngredient(1)}, {getBrownieIngredient(2)}, and {getBrownieIngredient(3)}.
               </li>
               <li className="mb-4">
-                Once those are combined, fold in{" "}
-                {isMetric
-                  ? ingredientsBrownies[4].metricUnit
-                  : ingredientsBrownies[4].englishUnit}{" "}
-                {ingredientsBrownies[4].name} and{" "}
-                {isMetric
-                  ? ingredientsBrownies[5].metricUnit
-                  : ingredientsBrownies[5].englishUnit}{" "}
-                {ingredientsBrownies[5].name}.
+                Once those are combined, fold in {getBrownieIngredient(4)} and {getBrownieIngredient(5)}.
               </li>
               <li className="mb-4">
                 Pour and spread about half of the mix evenly into your dish.

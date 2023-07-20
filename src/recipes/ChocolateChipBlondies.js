@@ -9,6 +9,17 @@ const ChocolateChipBlondies = () => {
     setIsMetric(!isMetric);
   }
 
+  const getIngredient = (i) => {
+    const ingredient = ingredients[i];
+    const unit = isMetric ? ingredient.metricUnit : ingredient.englishUnit;
+
+    return (
+      <>
+        {unit} of {ingredient.name}
+      </>
+    );
+  }
+
   const ingredients = [
     {name: 'light brown sugar', metricUnit: '300g', englishUnit: '1 & 1/2 cups'},
     {name: 'salted butter (melted)', metricUnit: '170g', englishUnit: '3/4 cups'},
@@ -114,41 +125,17 @@ const ChocolateChipBlondies = () => {
                 </li>
                 <li className="mb-4">
                   Melt butter completely if you haven't already. In a large
-                  bowl, mix{" "}
-                  {isMetric
-                    ? ingredients[0].metricUnit
-                    : ingredients[0].englishUnit}{" "}
-                  {ingredients[0].name} with{" "}
-                  {isMetric
-                    ? ingredients[1].metricUnit
-                    : ingredients[1].englishUnit}{" "}
-                  {ingredients[1].name}
+                  bowl, mix {getIngredient(0)} with {getIngredient(1)}
                 </li>
                 <li className="mb-4">
-                  Add{" "}
-                  {isMetric
-                    ? ingredients[2].metricUnit
-                    : ingredients[2].englishUnit}{" "}
-                  {ingredients[2].name} and{" "}
-                  {isMetric
-                    ? ingredients[3].metricUnit
-                    : ingredients[3].englishUnit}{" "}
-                  {ingredients[3].name}. Mix until smooth and combined.
+                  Add {getIngredient(2)} and {getIngredient(3)}. Mix until smooth and combined.
                 </li>
                 <li className="mb-4">
-                  Using a baking spatula, fold in{" "}
-                  {isMetric
-                    ? ingredients[4].metricUnit
-                    : ingredients[4].englishUnit}{" "}
-                  of {ingredients[4].name} until completely combined. You can
+                  Using a baking spatula, fold in {getIngredient(4)} until completely combined. You can
                   whisk it in if you want, just might get a bit messy :)
                 </li>
                 <li className="mb-4">
-                  Fold in{" "}
-                  {isMetric
-                    ? ingredients[5].metricUnit
-                    : ingredients[5].englishUnit}{" "}
-                  of {ingredients[5].name} (or whatever mix-in you want really)
+                  Fold in {getIngredient(5)} (or whatever mix-in you want really)
                 </li>
                 <li className="mb-4">
                   Spread the mix into your pan evenly. Place pan on the middle
