@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import ChocolateChipBlondies from './recipes/ChocolateChipBlondies';
 import SaltedCaramelBrownies from './recipes/SaltedCaramelBrownies';
+import BananaBread from './recipes/BananaBread';
 import './App.css'; 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/recipes/1" element={<ChocolateChipBlondies />} />
         <Route path="/recipes/2" element={<SaltedCaramelBrownies />} />
-        <Route path="/recipes/3" element={<ChocolateChipBlondies />} />
+        <Route path="/recipes/3" element={<BananaBread />} />
         {/* Add other routes and components */}
       </Routes>
     </Router>
