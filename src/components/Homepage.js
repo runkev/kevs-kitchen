@@ -19,7 +19,7 @@ const Homepage = () => {
           style={{ backgroundImage: `url(${brownies_tray})` }}
         >
           <div className="">
-            <h1 className="text-4xl font-bold text-center text-white mb-2 uppercase">
+            <h1 className="text-4xl font-bold text-center text-white mb-2 px-2 uppercase">
               Welcome to Petow's Pantry!
             </h1>
             <p className="text-xl text-center text-cookie px-2">
