@@ -29,6 +29,7 @@ export const SaltedCaramelBrownies = () => {
       <Navbar />
 
       <div className="font-hk-grotesk">
+        {/* Title Banner */}
         <div className="bg-brown py-2 w-screen">
           <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             SALTED CARAMEL BROWNIES
@@ -49,86 +50,91 @@ export const SaltedCaramelBrownies = () => {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-center'>
-        
-          <div className="mt-2 p-1 mx-2 order-2 md:order-1">
-            <h2 className="font-bold text-xl underline">INGREDIENTS</h2>
-            <div className="flex items-center mt-2">
-              <p className="mr-2">Change units:</p>
-              <label
-                className={`flex items-center ${
-                  isMetric ? "text-green-500" : "text-blue-500"
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  checked={isMetric}
-                  onChange={handleUnitToggle}
-                  className="hidden"
-                />
-                <span
-                  className={`relative w-10 h-6 rounded-full bg-gray-300 transition-colors ease-in-out duration-200 ${
-                    isMetric ? "bg-green-500" : "bg-blue-500"
+        <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie rounded-lg drop-shadow-">
+          <div className="flex flex-col md:flex-row gap-4 justify-between">
+            {/* Image Div */}
+            <div className="overflow-hidden drop-shadow-2xl max-w-md md:order-2 mx-2 rounded-lg">
+              <img
+                src={recipe2}
+                alt="Recipe 1"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Ingredients Div */}
+            <div className="md:order-1 mx-2">
+              <h2 className="font-bold text-xl underline">INGREDIENTS</h2>
+              <div className="flex items-center mt-2">
+                <p className="mr-2">Change units:</p>
+                <label
+                  className={`flex items-center ${
+                    isMetric ? "text-green-500" : "text-blue-500"
                   }`}
                 >
+                  <input
+                    type="checkbox"
+                    checked={isMetric}
+                    onChange={handleUnitToggle}
+                    className="hidden"
+                  />
                   <span
-                    className={`inline-block w-4 h-4 transform translate-x-0.5 translate-y-0.5 rounded-full bg-white shadow ease-in-out duration-200 ${
-                      isMetric ? "translate-x-4" : "translate-x-0"
+                    className={`relative w-10 h-6 rounded-full bg-gray-300 transition-colors ease-in-out duration-200 ${
+                      isMetric ? "bg-green-500" : "bg-blue-500"
                     }`}
-                  ></span>
-                </span>
-                <span className="ml-2">{isMetric ? "Metric" : "English"}</span>
-              </label>
-            </div>
+                  >
+                    <span
+                      className={`inline-block w-4 h-4 transform translate-x-0.5 translate-y-0.5 rounded-full bg-white shadow ease-in-out duration-200 ${
+                        isMetric ? "translate-x-4" : "translate-x-0"
+                      }`}
+                    ></span>
+                  </span>
+                  <span className="ml-2">
+                    {isMetric ? "Metric" : "English"}
+                  </span>
+                </label>
+              </div>
 
-            <div>
-              <p className="italic underline mt-2">For the Brownies:</p>
-              <ul className="mt-2">
-                {ingredientsBrownies.map((ingredient, index) => (
-                  <li key={index} className="mb-1">
-                    <strong>
-                      {isMetric ? ingredient.metricUnit : ingredient.englishUnit}
-                    </strong>{" "}
-                    {ingredient.name}
-                  </li>
-                ))}
-              </ul>
+              <div>
+                <p className="italic underline mt-2">For the Brownies:</p>
+                <ul className="mt-2">
+                  {ingredientsBrownies.map((ingredient, index) => (
+                    <li key={index} className="mb-1">
+                      <strong>
+                        {isMetric
+                          ? ingredient.metricUnit
+                          : ingredient.englishUnit}
+                      </strong>{" "}
+                      {ingredient.name}
+                    </li>
+                  ))}
+                </ul>
 
-              <p className="italic underline mt-2">For the Caramel:</p>
-              <ul className="mt-2">
-                {ingredientsCaramel.map((ingredient, index) => (
-                  <li key={index} className="mb-1">
-                    <strong>
-                      {isMetric ? ingredient.metricUnit : ingredient.englishUnit}
-                    </strong>{" "}
-                    {ingredient.name}
-                  </li>
-                ))}
-              </ul>
+                <p className="italic underline mt-2">For the Caramel:</p>
+                <ul className="mt-2">
+                  {ingredientsCaramel.map((ingredient, index) => (
+                    <li key={index} className="mb-1">
+                      <strong>
+                        {isMetric
+                          ? ingredient.metricUnit
+                          : ingredient.englishUnit}
+                      </strong>{" "}
+                      {ingredient.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className="overflow-hidden drop-shadow-2xl mt-2 mx-2 max-w-sm order-1 md:order-2">
-            <img
-              src={recipe2}
-              alt="Recipe 1"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-
-
-        </div>
-
-
-        <div className='flex justify-center'>
-          <div className="my-2 mx-2 p-1">
+          {/*Instructions Div */}
+          <div className="flex flex-col justify-center mt-2 mx-2">
             <h2 className="font-bold text-xl underline">INSTRUCTIONS</h2>
             <h3 className="italic underline">Start with the caramel:</h3>
             <ol>
               <li className="mb-4">
                 Preheat oven to 350F. Line a 9x9 inch pan with parchment paper.
-                (You can use an 8x8 inch pan. but will have to adjust bake time by
-                a few minutes.)
+                (You can use an 8x8 inch pan. but will have to adjust bake time
+                by a few minutes.)
               </li>
               <li className="mb-4">
                 In a medium saucepan, heat{" "}
@@ -140,13 +146,15 @@ export const SaltedCaramelBrownies = () => {
                 the saucepan).
               </li>
               <li className="mb-4">
-                The sugar will eventually melt and turn into an amber hue (about 5
-                minutes). At this point, remove the saucepan from heat and stir in{" "}
+                The sugar will eventually melt and turn into an amber hue (about
+                5 minutes). At this point, remove the saucepan from heat and
+                stir in{" "}
                 {isMetric
                   ? ingredientsCaramel[1].metricUnit
                   : ingredientsCaramel[1].englishUnit}{" "}
                 {ingredientsCaramel[1].name} (it should bubble a lot). Stir
-                together until they mix completely (should take a couple minutes)
+                together until they mix completely (should take a couple
+                minutes)
               </li>
               <li className="mb-4">
                 Once mixed, pour in{" "}
@@ -196,21 +204,20 @@ export const SaltedCaramelBrownies = () => {
                 {ingredientsBrownies[5].name}.
               </li>
               <li className="mb-4">
-                Pour and spread about half of the mix evenly into your dish. Then
-                pour 3/4 cup of the caramel (can go more or less if you want,
-                honestly) over the brownie mix in the pan. Try to spread evenly
-                without touching the edges. Spread the rest of the brownie mix on
-                top (sealing as much of the caramel as possible).
+                Pour and spread about half of the mix evenly into your dish.
+                Then pour 3/4 cup of the caramel (can go more or less if you
+                want, honestly) over the brownie mix in the pan. Try to spread
+                evenly without touching the edges. Spread the rest of the
+                brownie mix on top (sealing as much of the caramel as possible).
               </li>
               <li className="mb-4">
-                Bake for about 35 minutes or until a knife or toothpick comes out
-                clean when inserted in the center of the brownies. When done
+                Bake for about 35 minutes or until a knife or toothpick comes
+                out clean when inserted in the center of the brownies. When done
                 baking, let the brownies cool completely in the pan (on top of a
                 cooling rack) before cutting and serving.
               </li>
             </ol>
           </div>
-
         </div>
       </div>
     </div>
