@@ -18,7 +18,7 @@ const About = () => {
           </h1>
         </div>
       </div>
-      <div className="max-w-4xl mx-auto text-start pt-4 pb-2">
+      <div className="max-w-4xl mx-auto text-start pt-4 pb-2 px-2">
         <p className="text-lg">
           Welcome to my recipe website! I created this site to share some of my
           favorite recipes with you. Tired of endlessly scrolling through long
