@@ -58,12 +58,12 @@ return (
         >
           About
         </Link>
-        <Link
+        {/* <Link
           to="/contact"
           className="text-gray-800 hover:text-cookie hover:drop-shadow-2xl rounded-md"
         >
           Contact
-        </Link>
+        </Link> */}
       </div>
     </div>
   </nav>
