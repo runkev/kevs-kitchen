@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import brownies_tray from '../assets/brownies_tray.jpg';
+
 
 const Recipes = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -22,8 +24,20 @@ const Recipes = () => {
   return (
     <div className='bg-cream min-h-screen min-w-full font-hk-grotesk'>
       <Navbar />
-      <div className='container mx-auto px-4 max-w-6xl'>
-        <h1 className="text-3xl font-bold mb-4">Recipes</h1>
+
+      <div
+        className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
+        style={{ backgroundImage: `url(${brownies_tray})` }}
+      >
+        <div className="">
+          <h1 className="text-4xl font-bold text-center text-white uppercase">
+            RECIPES
+          </h1>
+        </div>
+      </div>
+
+      <div className='container mx-auto px-4 py-4 max-w-6xl'>
+      
 
         <div className="w-full mb-4">
           <input

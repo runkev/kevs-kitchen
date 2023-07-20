@@ -11,7 +11,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 const Homepage = () => {
   return (
-    <div className=" bg-cream min-h-screen font-hk-grotesk border-2 border-black border-solid">
+    <div className=" bg-cream min-h-screen font-hk-grotesk">
       <Navbar />
       <div className="mx-auto">
         <div

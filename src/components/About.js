@@ -6,7 +6,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <div className=" bg-cream min-h-screen font-hk-grotesk border-2 border-black border-solid">
+    <div className=" bg-cream min-h-screen font-hk-grotesk">
       <Navbar />
       <div
         className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"

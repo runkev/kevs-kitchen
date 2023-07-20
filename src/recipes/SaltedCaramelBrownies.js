@@ -51,6 +51,7 @@ export const SaltedCaramelBrownies = () => {
       <Navbar />
 
       <div className="font-hk-grotesk">
+
         {/* Title Banner */}
         <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
           <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
@@ -72,7 +73,7 @@ export const SaltedCaramelBrownies = () => {
           </div>
         </div>
 
-        <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie rounded-lg drop-shadow-">
+        <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie rounded-lg">
           <div className="flex flex-col md:flex-row gap-4 justify-between">
             {/* Image Div */}
             <div className="overflow-hidden drop-shadow-2xl max-w-md md:order-2 mx-2 rounded-lg">
