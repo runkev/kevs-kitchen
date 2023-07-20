@@ -52,7 +52,7 @@ export const SaltedCaramelBrownies = () => {
 
       <div className="font-hk-grotesk">
         {/* Title Banner */}
-        <div className="bg-brown py-2 w-screen">
+        <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
           <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             SALTED CARAMEL BROWNIES
           </h1>
