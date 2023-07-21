@@ -26,7 +26,7 @@ const Recipes = () => {
       <Navbar />
 
       <div
-        className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
+        className="flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
         style={{ backgroundImage: `url(${brownies_tray})` }}
       >
         <div className="">

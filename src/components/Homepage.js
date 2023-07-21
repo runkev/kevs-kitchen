@@ -15,7 +15,7 @@ const Homepage = () => {
       <Navbar />
       <div className="mx-auto">
         <div
-          className="bg-brown flex justify-center items-center bg-cover bg-no-repeat h-60 border-solid border-cookie border-y-4"
+          className="flex justify-center items-center bg-cover bg-no-repeat h-60 border-solid border-cookie border-y-4"
           style={{ backgroundImage: `url(${brownies_tray})` }}
         >
           <div className="">
