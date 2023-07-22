@@ -57,9 +57,9 @@ const ChocolateChipBlondies = () => {
         </div> */}
         <Banner
           title="Chocolate Chip Blondies"
-          prepTime="5"
+          prepTime="10"
           bakeTime="25"
-          totalTime="30"
+          totalTime="35"
         />
 
         <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie">
