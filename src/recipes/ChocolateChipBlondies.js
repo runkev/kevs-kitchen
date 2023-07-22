@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import recipe1 from '../assets/recipe1.jpg';
+import Banner from '../components/Banner';
 
 const ChocolateChipBlondies = () => {
   const [isMetric, setIsMetric] = useState(false)
@@ -35,7 +36,7 @@ const ChocolateChipBlondies = () => {
 
       <div className="font-hk-grotesk">
         {/* Title Banner */}
-        <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
+        {/* <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
           <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
             CHOCOLATE CHIP BLONDIES
           </h1>
@@ -53,7 +54,10 @@ const ChocolateChipBlondies = () => {
               <p className="text-center">35 min</p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Banner
+          title="Chocolate Chip Blondies"
+        />
 
         <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie">
           <div className="flex flex-col md:flex-row gap-4 justify-between">

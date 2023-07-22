@@ -7,6 +7,7 @@ import recipe2 from '../assets/recipe2.jpg';
 import recipe3 from '../assets/recipe3.jpg';
 import brownies_tray from '../assets/brownies_tray.jpg';
 import { FaInstagram } from 'react-icons/fa';
+import Banner from './Banner';
 
 
 const Homepage = () => {
@@ -14,8 +15,12 @@ const Homepage = () => {
     <div className=" bg-cream min-h-screen font-hk-grotesk">
       <Navbar />
       <div className="mx-auto">
-        <div
-          className="flex justify-center items-center bg-cover bg-no-repeat h-60 border-solid border-cookie border-y-4"
+        <Banner
+          title="Welcome to Petow's Pantry"
+          subtitle="Simple, easy recipes (without the mile-long life stories...)"
+        />
+        {/* <div
+          className="flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
           style={{ backgroundImage: `url(${brownies_tray})` }}
         >
           <div className="">
@@ -25,17 +30,8 @@ const Homepage = () => {
             <p className="text-xl text-center text-cookie px-2">
               Simple, easy recipes (without the mile-long life stories...)
             </p>
-            {/* <a
-              href="https://www.instagram.com/kevinpetow"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-cookie flex justify-center"
-            >
-              <FaInstagram className="inline-block w-6 h-6 mr-1" />
-              <span></span>
-            </a> */}
           </div>
-        </div>
+        </div> */}
 
         <div className="text-center text-2xl font-bold my-6 ">
           <h1>MOST POPULAR</h1>
