@@ -64,6 +64,9 @@ const BananaBread = () => {
         </div> */}
         <Banner
           title="Healthy(er) Banana Bread"
+          prepTime="10"
+          bakeTime="55"
+          totalTime="65"
         />
 
         <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie">

@@ -76,6 +76,9 @@ export const SaltedCaramelBrownies = () => {
         </div> */}
         <Banner
           title="Salted Caramel Brownies"
+          prepTime="25"
+          bakeTime="35"
+          totalTime="60"
         />
 
         <div className="mx-auto my-2 py-2 flex flex-col max-w-5xl border-solid border-2 border-cookie">
