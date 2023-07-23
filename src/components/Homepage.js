@@ -8,6 +8,7 @@ import recipe3 from '../assets/recipe3.jpg';
 import brownies_tray from '../assets/brownies_tray.jpg';
 import { FaInstagram } from 'react-icons/fa';
 import Banner from './Banner';
+import HomeImageLink from './HomeImageLink';
 
 
 const Homepage = () => {
@@ -19,61 +20,30 @@ const Homepage = () => {
           title="Welcome to Petow's Pantry"
           subtitle="Simple, easy recipes (without the mile-long life stories...)"
         />
-        {/* <div
-          className="flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
-          style={{ backgroundImage: `url(${brownies_tray})` }}
-        >
-          <div className="">
-            <h1 className="text-4xl font-bold text-center text-white mb-2 px-2 uppercase">
-              Welcome to Petow's Pantry!
-            </h1>
-            <p className="text-xl text-center text-cookie px-2">
-              Simple, easy recipes (without the mile-long life stories...)
-            </p>
-          </div>
-        </div> */}
 
         <div className="text-center text-2xl font-bold my-6 ">
           <h1>MOST POPULAR</h1>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mt-2">
-          <Link to="/recipes/2" className="hover:scale-105">
-            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
-              <img
-                src={recipe2}
-                alt="Recipe 2"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="text-center font-bold uppercase">
-              Salted Caramel Brownies
-            </h1>
-          </Link>
-          <Link to="/recipes/1" className="hover:scale-105">
-            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
-              <img
-                src={recipe1}
-                alt="Recipe 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="text-center font-bold uppercase">
-              Chocolate Chip Blondies
-            </h1>
-          </Link>
-          <Link to="/recipes/3" className="hover:scale-105">
-            <div className="h-64 w-80 overflow-hidden drop-shadow-2xl">
-              <img
-                src={recipe3}
-                alt="Recipe 3"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="text-center font-bold uppercase">
-              Healthy(er) Banana Bread
-            </h1>
-          </Link>
+          <HomeImageLink
+            imgLinkTo='/recipes/2'
+            imgSrc={recipe2}
+            imgAlt='Recipe 2'
+            imgName='Salted Caramel Brownies'
+          />
+          <HomeImageLink
+            imgLinkTo='/recipes/1'
+            imgSrc={recipe1}
+            imgAlt='Recipe 1'
+            imgName='Chocolate Chip Blondies'
+          />
+          <HomeImageLink
+            imgLinkTo='/recipes/3'
+            imgSrc={recipe3}
+            imgAlt='Recipe 3'
+            imgName='Healthy(er) Banana Bread'
+          />
         </div>
 
         <a
