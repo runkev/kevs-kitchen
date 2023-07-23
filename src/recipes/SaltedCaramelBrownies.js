@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar'
+import {motion} from 'framer-motion';
 import recipe2 from '../assets/recipe2.jpg'
 import Banner from '../components/Banner';
 
@@ -49,11 +49,16 @@ export const SaltedCaramelBrownies = () => {
   ]
 
   return (
-    <div className="bg-cream min-h-screen min-w-full">
-      <Navbar />
+    <motion.div
+      className="bg-cream min-h-screen min-w-full"
+      // initial={{opacity: 0}}
+      // animate={{opacity: 1}}
+      // exit={{opacity: 0}}
+      // transition={{duration: 0.4}}
+    >
+      {/* <Navbar /> */}
 
       <div className="font-hk-grotesk">
-
         {/* Title Banner */}
         {/* <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
           <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
@@ -168,9 +173,9 @@ export const SaltedCaramelBrownies = () => {
                 by a few minutes.)
               </li>
               <li className="mb-4">
-                In a medium saucepan, heat {getCaramelIngredient(0)} on medium-high heat. Occasionally
-                stir the sugar with a spatula (make sure to get to the bottom of
-                the saucepan).
+                In a medium saucepan, heat {getCaramelIngredient(0)} on
+                medium-high heat. Occasionally stir the sugar with a spatula
+                (make sure to get to the bottom of the saucepan).
               </li>
               <li className="mb-4">
                 The sugar will eventually melt and turn into an amber hue (about
@@ -180,10 +185,10 @@ export const SaltedCaramelBrownies = () => {
                 minutes)
               </li>
               <li className="mb-4">
-                Once mixed, pour in {getCaramelIngredient(2)} and stir until combined. Put the
-                saucecpan back on the heat for 30-60 seconds while stirring. Now
-                the caramel is done. Set aside to cool and begin making the
-                brownie mix.
+                Once mixed, pour in {getCaramelIngredient(2)} and stir until
+                combined. Put the saucecpan back on the heat for 30-60 seconds
+                while stirring. Now the caramel is done. Set aside to cool and
+                begin making the brownie mix.
               </li>
             </ol>
 
@@ -193,10 +198,13 @@ export const SaltedCaramelBrownies = () => {
                 Melt the {getBrownieIngredient(0)} in a microwave-safe bowl.
               </li>
               <li className="mb-4">
-                In a large bowl, mix the melted butter, {getBrownieIngredient(1)}, {getBrownieIngredient(2)}, and {getBrownieIngredient(3)}.
+                In a large bowl, mix the melted butter,{" "}
+                {getBrownieIngredient(1)}, {getBrownieIngredient(2)}, and{" "}
+                {getBrownieIngredient(3)}.
               </li>
               <li className="mb-4">
-                Once those are combined, fold in {getBrownieIngredient(4)} and {getBrownieIngredient(5)}.
+                Once those are combined, fold in {getBrownieIngredient(4)} and{" "}
+                {getBrownieIngredient(5)}.
               </li>
               <li className="mb-4">
                 Pour and spread about half of the mix evenly into your dish.
@@ -215,7 +223,7 @@ export const SaltedCaramelBrownies = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

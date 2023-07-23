@@ -1,20 +1,23 @@
 import React from 'react';
-import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
-
 import recipe1 from '../assets/recipe1.jpg';
 import recipe2 from '../assets/recipe2.jpg';
 import recipe3 from '../assets/recipe3.jpg';
-import brownies_tray from '../assets/brownies_tray.jpg';
 import { FaInstagram } from 'react-icons/fa';
 import Banner from './Banner';
 import HomeImageLink from './HomeImageLink';
+import {motion} from 'framer-motion';
 
 
 const Homepage = () => {
   return (
-    <div className=" bg-cream min-h-screen font-hk-grotesk">
-      <Navbar />
+    <motion.div 
+      className=" bg-cream min-h-screen font-hk-grotesk"
+      // initial={{opacity: 0}}
+      // animate={{opacity: 1}}
+      // exit={{opacity: 0}}
+      // transition={{duration: 0.4}}
+      >
+      {/* <Navbar /> */}
       <div className="mx-auto">
         <Banner
           title="Welcome to Petow's Pantry"
@@ -56,7 +59,7 @@ const Homepage = () => {
         </a>
 
       </div>
-    </div>
+    </motion.div>
   );
 };
 

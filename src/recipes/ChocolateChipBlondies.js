@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
+import {motion} from 'framer-motion';
 import recipe1 from '../assets/recipe1.jpg';
 import Banner from '../components/Banner';
 
@@ -31,8 +31,14 @@ const ChocolateChipBlondies = () => {
   ];
   
   return (
-    <div className="bg-cream min-h-screen min-w-full">
-      <Navbar />
+    <motion.div
+      className="bg-cream min-h-screen min-w-full"
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // exit={{ opacity: 0 }}
+      // transition={{ duration: 0.4 }}
+    >
+      {/* <Navbar /> */}
 
       <div className="font-hk-grotesk">
         {/* Title Banner */}
@@ -158,7 +164,7 @@ const ChocolateChipBlondies = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

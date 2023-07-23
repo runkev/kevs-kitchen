@@ -1,28 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Homepage from './components/Homepage';
-import Recipes from './components/Recipes';
-import About from './components/About';
-import Contact from './components/Contact';
-import ChocolateChipBlondies from './recipes/ChocolateChipBlondies';
-import SaltedCaramelBrownies from './recipes/SaltedCaramelBrownies';
-import BananaBread from './recipes/BananaBread';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import './App.css'; 
+import { AnimatedRoutes } from './components/AnimatedRoutes';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/recipes" element={<Recipes />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/recipes/1" element={<ChocolateChipBlondies />} />
-        <Route path="/recipes/2" element={<SaltedCaramelBrownies />} />
-        <Route path="/recipes/3" element={<BananaBread />} />
-        {/* Add other routes and components */}
-      </Routes>
+      <Navbar/>
+      <AnimatedRoutes/>      
     </Router>
     // <Router>
     //   <Routes>

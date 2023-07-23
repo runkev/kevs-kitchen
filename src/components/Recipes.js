@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import {motion} from 'framer-motion';
 import brownies_tray from '../assets/brownies_tray.jpg';
 
 
@@ -22,8 +22,14 @@ const Recipes = () => {
   );
 
   return (
-    <div className='bg-cream min-h-screen min-w-full font-hk-grotesk'>
-      <Navbar />
+    <motion.div
+      className="bg-cream min-h-screen min-w-full font-hk-grotesk"
+      // initial={{opacity: 0}}
+      // animate={{opacity: 1}}
+      // exit={{opacity: 0}}
+      // transition={{duration: 0.4}}
+    >
+      {/* <Navbar /> */}
 
       <div
         className="flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
@@ -36,9 +42,7 @@ const Recipes = () => {
         </div>
       </div>
 
-      <div className='container mx-auto px-4 py-4 max-w-6xl'>
-      
-
+      <div className="container mx-auto px-4 py-4 max-w-6xl">
         <div className="w-full mb-4">
           <input
             type="text"
@@ -49,17 +53,23 @@ const Recipes = () => {
           />
         </div>
 
-        <ul className='w-full'>
+        <ul className="w-full">
           {filteredRecipes.map((recipe) => (
-            <li key={recipe.id} className="mb-2 bg-cookie border border-gray-300 rounded">
-              <Link to={`/recipes/${recipe.id}`} className="block px-4 py-2 hover:bg-gray-200">
+            <li
+              key={recipe.id}
+              className="mb-2 bg-cookie border border-gray-300 rounded"
+            >
+              <Link
+                to={`/recipes/${recipe.id}`}
+                className="block px-4 py-2 hover:bg-gray-200"
+              >
                 {recipe.title}
               </Link>
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

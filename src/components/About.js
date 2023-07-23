@@ -2,12 +2,20 @@ import React from 'react'
 import Navbar from './Navbar'
 import brownies_tray from '../assets/brownies_tray.jpg';
 import { FaInstagram } from 'react-icons/fa';
+import {motion} from 'framer-motion';
+
 
 
 const About = () => {
   return (
-    <div className=" bg-cream min-h-screen font-hk-grotesk">
-      <Navbar />
+    <motion.div
+      className="bg-cream min-h-screen font-hk-grotesk"
+      // initial={{opacity: 0}}
+      // animate={{opacity: 1}}
+      // exit={{opacity: 0}}
+      // transition={{duration: 0.4}}
+    >
+      {/* <Navbar /> */}
       <div
         className="flex justify-center items-center bg-cover bg-no-repeat h-52 border-solid border-cookie border-y-4"
         style={{ backgroundImage: `url(${brownies_tray})` }}
@@ -55,7 +63,7 @@ const About = () => {
           <FaInstagram className="inline-block w-6 h-6 mr-1" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
