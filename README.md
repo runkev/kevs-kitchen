@@ -7,8 +7,8 @@ Petow's Pantry is a recipe website designed to provide a seamless cooking and ba
 - Access a collection of delightful recipes for various dishes.
 - Search for specific recipes using the search bar.
 - Each recipe includes detailed instructions and a list of ingredients.
-- Recipes are presented in a visually appealing format with images and clear titles.
-- The website is designed for mobile devices, ensuring a smooth cooking experience even on small screens.
+- Recipes are presented in a simple, visually appealing format.
+- The website is designed for mobile devices, ensuring a smooth cooking experience when you're in the kitchen.
 
 ## Technologies Used
 
@@ -26,7 +26,3 @@ As Petow's Pantry is an open-source project, contributions are welcome! If you h
 ## Issues
 
 If you encounter any issues while using the website or have any feature requests, please submit an issue in the [Issues](https://github.com/runkev/petows-pantry/issues) section.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/runkev/petows-pantry/blob/main/LICENSE) file for details.
