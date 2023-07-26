@@ -17,7 +17,7 @@ Petow's Pantry is a recipe website designed to provide a seamless cooking and ba
 
 ## Usage
 
-To explore Petow's Pantry and start cooking up delicious dishes, visit [Petow's Pantry Website](https://www.petowspantry.com).
+To explore Petow's Pantry and start cooking up delicious dishes, visit [Petow's Pantry Website](https://www.petowspantry.com){:target="_blank"}.
 
 ## Contributing
 
