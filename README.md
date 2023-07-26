@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Petow's Pantry
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Petow's Pantry is a recipe website designed to provide a seamless cooking and baking experience, especially when you're in the kitchen and need quick access to delicious recipes. The website is built to be mobile-friendly and user-friendly, so you can easily browse and cook your favorite dishes without any hassle.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Access a collection of delightful recipes for various dishes.
+- Search for specific recipes using the search bar.
+- Each recipe includes detailed instructions and a list of ingredients.
+- Recipes are presented in a visually appealing format with images and clear titles.
+- The website is designed for mobile devices, ensuring a smooth cooking experience even on small screens.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js: A JavaScript library for building user interfaces, providing a smooth and responsive user experience.
+- Tailwind CSS: A utility-first CSS framework that makes styling and customization a breeze, ensuring a clean and modern design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+To explore Petow's Pantry and start cooking up delicious dishes, visit [Petow's Pantry Website](https://www.petowspantry.com).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `npm run build`
+As Petow's Pantry is an open-source project, contributions are welcome! If you have any bug fixes, feature suggestions, or enhancements, feel free to submit a pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Issues
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you encounter any issues while using the website or have any feature requests, please submit an issue in the [Issues](https://github.com/runkev/petows-pantry/issues) section.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/runkev/petows-pantry/blob/main/LICENSE) file for details.
