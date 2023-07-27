@@ -15,8 +15,11 @@ const Recipes = () => {
     { id: 1, title: 'Chocolate Chip Blondies', imageUrl: recipe1},
     { id: 2, title: 'Salted Caramel Brownies', imageUrl: recipe2},
     { id: 3, title: 'Healthy(er) Banana Bread', imageUrl: recipe3},
-    // { id: 4, title: 'Test', imageUrl: recipe3},
-    // { id: 5, title: 'Test', imageUrl: recipe3},
+    // { id: 3, title: 'Test', imageUrl: recipe3},
+    // { id: 3, title: 'Test', imageUrl: recipe3},
+    // { id: 3, title: 'Test', imageUrl: recipe3},
+    // { id: 3, title: 'Test', imageUrl: recipe3},
+    // { id: 3, title: 'Test', imageUrl: recipe3},
   ];
 
   const handleSearchChange = (e) => {
