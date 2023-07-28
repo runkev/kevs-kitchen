@@ -8,6 +8,7 @@ import SaltedCaramelBrownies from '../recipes/SaltedCaramelBrownies';
 import BananaBread from '../recipes/BananaBread'
 
 import {AnimatePresence} from 'framer-motion';
+import { ProteinMac } from '../recipes/ProteinMac';
 // import {} from 'framer-motion/dist/framer-motion';
 
 export const AnimatedRoutes = () => {
@@ -22,6 +23,7 @@ export const AnimatedRoutes = () => {
         <Route path="/recipes/1" element={<ChocolateChipBlondies />} />
         <Route path="/recipes/2" element={<SaltedCaramelBrownies />} />
         <Route path="/recipes/3" element={<BananaBread />} />
+        <Route path="/recipes/4" element={<ProteinMac />} />
       </Routes>
     </AnimatePresence>
   );

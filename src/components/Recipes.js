@@ -6,6 +6,7 @@ import RecipeListCard from './RecipeListCard';
 import recipe1 from '../assets/recipe1.jpg';
 import recipe2 from '../assets/recipe2.jpg';
 import recipe3 from '../assets/recipe3.jpg';
+import recipe4 from '../assets/recipe4.jpg';
 
 
 const Recipes = () => {
@@ -15,7 +16,7 @@ const Recipes = () => {
     { id: 1, title: 'Chocolate Chip Blondies', imageUrl: recipe1},
     { id: 2, title: 'Salted Caramel Brownies', imageUrl: recipe2},
     { id: 3, title: 'Healthy(er) Banana Bread', imageUrl: recipe3},
-    // { id: 3, title: 'Test', imageUrl: recipe3},
+    { id: 4, title: 'Protein Mac & Cheese', imageUrl: recipe4},
     // { id: 3, title: 'Test', imageUrl: recipe3},
     // { id: 3, title: 'Test', imageUrl: recipe3},
     // { id: 3, title: 'Test', imageUrl: recipe3},

@@ -41,26 +41,7 @@ const ChocolateChipBlondies = () => {
       {/* <Navbar /> */}
 
       <div className="font-hk-grotesk">
-        {/* Title Banner */}
-        {/* <div className="bg-brown py-2 w-screen border-solid border-cookie border-y-4">
-          <h1 className="font-bold text-cookie flex flex-col items-center max-w-screen text-center text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl">
-            CHOCOLATE CHIP BLONDIES
-          </h1>
-          <div className="grid grid-cols-3s justify-center mt-1 text-xs">
-            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
-              <h3 className="font-semibold text-center">Prep Time</h3>
-              <p className="text-center">10 min</p>
-            </div>
-            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
-              <h3 className="font-semibold text-center">Bake Time</h3>
-              <p className="text-center">25 min</p>
-            </div>
-            <div className="border border-black border-solid rounded-lg mx-1 bg-cream">
-              <h3 className="font-semibold text-center">Total Time</h3>
-              <p className="text-center">35 min</p>
-            </div>
-          </div>
-        </div> */}
+       
         <Banner
           title="Chocolate Chip Blondies"
           prepTime="10"
